@@ -1,0 +1,103 @@
+[
+    {
+        "name": "Portal Events",
+        "company": "FPL Factory HN",
+        "timeframe": "11/2024 - Present",
+        "technologies": [
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "Thymeleaf",
+            "Tailwind CSS",
+            "JavaScript",
+            "Ajax",
+            "JQuery"
+        ],
+        "role": "Backend Developer",
+        "progress": 100
+    },
+    {
+        "name": "Portal Articles",
+        "company": "FPL Factory HN",
+        "timeframe": "11/2024 - Present",
+        "technologies": [
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "Thymeleaf",
+            "Tailwind CSS",
+            "JavaScript",
+            "Ajax",
+            "JQuery"
+        ],
+        "role": "Backend Developer",
+        "responsible": [
+            "Implemented new features according to team lead's requirements",
+            "Fixed bugs and improved existing functionalities",
+            "Assisted with database operations and UI adjustments",
+            "Supported the team with various development-related tasks when needed"
+        ],
+        "progress": 100
+    },
+    {
+        "name": "GPA Explanation",
+        "company": "FPL Factory HN",
+        "timeframe": "11/2024 - Present",
+        "technologies": [
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "Thymeleaf",
+            "Tailwind CSS",
+            "JavaScript",
+            "Ajax",
+            "JQuery"
+        ],
+        "role": "Backend Developer",
+        "responsible": [
+            "Implemented new features according to team lead's requirements",
+            "Fixed bugs and improved existing functionalities",
+            "Assisted with database operations and UI adjustments",
+            "Supported the team with various development-related tasks when needed"
+        ],
+        "progress": 100
+    },
+    {
+        "name": "Polyshoes Desktop App",
+        "company": "Project 1 - School Assignment",
+        "timeframe": "10/2023 - 12/2023",
+        "technologies": [
+            "Java",
+            "Swing",
+            "SQL Server"
+        ],
+        "role": "Team Lead & Developer",
+        "progress": 100
+    },
+    {
+        "name": "Landing Page Hackathon 2023",
+        "company": "FPT Polytechnic",
+        "timeframe": "03/2023 - 04/2023",
+        "technologies": [
+            "HTML/CSS"
+        ],
+        "role": "Frontend Developer",
+        "progress": 100
+    },
+    {
+        "name": "Techshop Management System",
+        "company": "Self-study",
+        "timeframe": "04/2025 - Present",
+        "technologies": [
+            "Java",
+            "Spring Boot",
+            "MySQL",
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Shadcn UI"
+        ],
+        "role": "Full Stack Developer",
+        "progress": 30
+    }
+]

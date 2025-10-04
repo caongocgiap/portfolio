@@ -1,0 +1,24 @@
+[
+    {
+        "role": "IT Support",
+        "company": "Hiep Thanh Computer",
+        "period": "01/2025 - Present",
+        "details": [
+            "experience1-detail1",
+            "experience1-detail2",
+            "experience1-detail3"
+        ]
+    },
+    {
+        "role": "Intern Backend Developer",
+        "company": "FPL Factory HN",
+        "period": "02/2024 - 12/2024",
+        "details": [
+            "experience2-detail1",
+            "experience2-detail2",
+            "experience2-detail3",
+            "experience2-detail4",
+            "experience2-detail5"
+        ]
+    }
+]

@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+    :root {
+      --primary: #ffffff;
+      --background: #000000;
+      --foreground: #FC530A;
+    }
+  
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      background: black url("/assets/images/bg-background.svg") no-repeat center center;
+      background-size: cover;
+      color: var(--primary);
+    }
+
+    button {
+      @apply text-white hover:opacity-100 transition-all duration-200 cursor-pointer active:scale-95;
+    }
+  }
+  
+  @layer utilities {
+    .text-foreground {
+      color: var(--foreground);
+    }
+    .bg-foreground {
+      background-color: var(--foreground);
+    }
+    .border-foreground {
+      border-color: var(--foreground);
+    }
+    .terminal-cursor {
+      display: inline-block;
+      width: 0.8ch;
+      height: 1em;
+      background-color: currentColor;
+      margin-left: 4px;
+      animation: terminal-blink 1s steps(1, end) infinite;
+      vertical-align: -0.1em;
+    }
+  }
+
+  @keyframes terminal-blink {
+    0%, 50% { opacity: 1; }
+    50.01%, 100% { opacity: 0; }
+  }

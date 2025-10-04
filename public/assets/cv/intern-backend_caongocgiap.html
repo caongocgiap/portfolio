@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+      /* CSS Values (compatible with all PDF generators) */
+
+
+      
+      /* Reset and Base Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        line-height: 1.4;
+        color: #000000;
+        background: #ffffff;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Utility Classes */
+      .text--bold { font-weight: 700; }
+      .text--normal { font-weight: 400; }
+      .text--small { font-size: 11px; color: #666666; }
+      .text--title { font-size: 14px; font-weight: 700; color: #000000; margin-bottom: 5px; }
+      .text--header { font-size: 18px; font-weight: 700; color: #000000; }
+      .text--name { font-size: 28px; font-weight: 700; color: #000000; margin-bottom: 5px; }
+      .text--position { font-size: 16px; color: #666666; font-weight: 400; }
+      
+      .layout--flex { display: flex; justify-content: space-between; align-items: flex-start; }
+      .layout--flex-center { display: flex; justify-content: space-between; align-items: center; }
+      
+      .margin--bottom { margin-bottom: 20px; }
+      .margin--bottom-small { margin-bottom: 15px; }
+      .margin--bottom-xs { margin-bottom: 8px; }
+      .margin--bottom-xxs { margin-bottom: 5px; }
+      .margin--bottom-3px { margin-bottom: 3px; }
+
+      /* Layout Container */
+      .cv-container {
+        width: 210mm;
+        height: 297mm;
+        margin: 0 auto;
+        padding: 15mm;
+        background: #ffffff;
+        box-sizing: border-box;
+      }
+
+      .cv-wrapper {
+        background: #ffffff;
+        height: 100%;
+        padding: 0;
+      }
+
+      .cv-content {
+        width: 100%;
+      }
+
+      /* Header Section */
+      .cv-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 30px;
+      }
+
+      .cv-header__title {
+        flex: 1;
+      }
+
+      .cv-header__name {
+        font-size: 28px;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 5px;
+      }
+
+      .cv-header__position {
+        font-size: 16px;
+        color: #666666;
+        font-weight: 400;
+      }
+
+      .cv-header__contact {
+        min-width: 200px;
+      }
+
+      /* Contact Information */
+      .contact-item {
+        margin-bottom: 8px;
+        font-size: 12px;
+      }
+
+      .contact-item__text {
+        color: #000000;
+        font-size: 12px;
+      }
+
+      /* Main Layout */
+      .cv-layout {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+      }
+
+      .cv-main {
+        width: 65%;
+        float: left;
+      }
+
+      .cv-sidebar {
+        width: 30%;
+        float: right;
+        margin-left: 5%;
+      }
+
+      /* Section Containers */
+      .cv-section {
+        margin-bottom: 20px;
+      }
+
+      /* Section Headers */
+      .section-header {
+        border-bottom: 1px solid #cccccc;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+      }
+
+      .section-header__title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #000000;
+      }
+
+      /* Typography */
+      .cv-text {
+        font-size: 12px;
+        color: #000000;
+        line-height: 1.5;
+        margin-bottom: 8px;
+      }
+
+      .cv-text--small {
+        font-size: 11px;
+        color: #666666;
+        margin-bottom: 3px;
+      }
+      
+      /* Push date to true right edge */
+      .cv-layout .cv-text--small:last-child {
+        margin-left: auto;
+      }
+
+      /* Item Titles - Consolidated */
+      .experience-item {
+        margin-bottom: 15px;
+      }
+
+      .experience-item__title,
+      .project-item__title,
+      .education-item__title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 5px;
+      }
+
+      .education-item__title {
+        margin-bottom: 0; /* Override for education items */
+      }
+
+      /* Project Section */
+      .project-item {
+        margin-bottom: 15px;
+        padding-left: 15px;
+        border-left: 3px solid #a9a9a9;
+      }
+
+      .project-links {
+        margin-top: 5px;
+      }
+
+      /* Education Layout */
+      .education-layout {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .education-details {
+        text-align: right;
+      }
+
+      .education-details--flex {
+        text-align: right;
+        flex: 1;
+      }
+
+      /* Skills Section */
+      .skills-category {
+        font-size: 12px;
+        color: #000000;
+        line-height: 1.4;
+        margin-bottom: 10px;
+      }
+
+      .skills-category__label {
+        font-weight: 700;
+      }
+
+      .skills-category__items {
+        font-weight: 400;
+      }
+
+      /* Portfolio Links */
+      .portfolio-links {
+        margin-bottom: 8px;
+      }
+
+      /* Lucide Icons */
+      .icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        stroke: currentColor;
+        stroke-width: 1.5;
+        fill: none;
+      }
+      
+      .icon--small {
+        width: 14px;
+        height: 14px;
+      }
+
+      /* Clear floats */
+      .cv-layout:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Emoji support */
+      .contact-item__text, .cv-text--small {
+        font-family: 'Inter', sans-serif;
+      }
+
+      /* Print styles */
+      @media print {
+        @page {
+          size: A4;
+          margin: 15mm;
+        }
+        
+        body {
+          font-size: 11px;
+          margin: 0;
+          padding: 0;
+        }
+        
+        .cv-container {
+          width: 100%;
+          height: auto;
+          padding: 0;
+          margin: 0;
+        }
+        
+        .cv-wrapper {
+          border: none;
+          padding: 0;
+        }
+        
+        .cv-header__name {
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-container">
+      <div class="cv-wrapper">
+        <div class="cv-content">
+          <header class="cv-header">
+            <div class="cv-header__title">
+              <div class="cv-header__name">Cao Ngoc Giap</div>
+              <p class="cv-header__position">
+                <span class="text--normal">Intern Backend Developer</span>
+              </p>
+            </div>
+            <div class="cv-header__contact">
+              <div class="contact-item">
+                <div class="contact-item__text">
+                  <i data-lucide="map-pin" class="icon"></i> Son Dong - Ha Noi
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-item__text">
+                  <i data-lucide="mail" class="icon"></i> ngocgiap5204@gmail.com
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-item__text">
+                  <i data-lucide="phone" class="icon"></i> +84 359 430 937
+                </div>
+              </div>
+            </div>
+          </header>
+          
+          <div class="cv-layout">
+            <div class="cv-main">
+              <!-- Summary -->
+              <div class="cv-section">
+                <div class="section-header"><div class="section-header__title">Summary</div></div>
+                <p class="cv-text">I am passionate about coding and improving my skills by creating full-stack projects and clones to practice and learn. I am always focused on growing my knowledge and building high-quality solutions.</p>
+              </div>
+
+              <!-- Experience -->
+              <div class="cv-section">
+                <div class="section-header"><div class="section-header__title">Experience</div></div>
+                <div class="cv-section">
+                  <div class="experience-item">
+                    <p class="experience-item__title">
+                      <span class="text--bold">IT Support</span>
+                      <span class="text--normal"> at </span>
+                      <span class="text--bold">Hiep Thanh Computer</span>
+                    </p>
+                    <div class="cv-layout">
+                      <div class="cv-text--small">Son Dong - Ha Noi | Full-time</div>
+                      <p class="cv-text--small">01/2025 - Present</p>
+                    </div>
+                  </div>
+                  <p class="cv-text">Technical support and troubleshooting related to hardware, software, and network systems for users</p>
+                  <p class="cv-text">
+                    • Deploying and configuring operating systems (Windows/macOS).<br />
+                    • Installing, configuring, and maintaining surveillance systems (IP/CCTV Cameras) and network devices (Routers, Switches, Wi-Fi APs).
+                  </p>
+                </div>
+                <div class="cv-section">
+                  <div class="experience-item">
+                    <p class="experience-item__title">
+                      <span class="text--bold">Backend Developer</span>
+                      <span class="text--normal"> at </span>
+                      <span class="text--bold">FPL Factory HN</span>
+                    </p>
+                    <div class="cv-layout">
+                      <div class="cv-text--small">Nam Tu Liem - Ha Noi | Full-time</div>
+                      <p class="cv-text--small">09/2024 - 12/2024</p>
+                    </div>
+                  </div>
+                  <p class="cv-text">Built REST APIs and database systems for management platform</p>
+                  <p class="cv-text">
+                    • Developed APIs using Spring Boot combined with JPA/Hibernate for managing data (events, articles, GPA explanation).<br />
+                    • Fixed bugs based on reports from the testing team or user feedback.<br />
+                    • Participated in team documentation and interface design.<br />
+                    • Worked with frontend frameworks like React to build basic user interface components.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Projects -->
+              <div class="cv-section">
+                <div class="section-header"><div class="section-header__title">Projects</div></div>
+                <div class="project-item">
+                  <div class="project-item__title">Task Management API</div>
+                  <div class="cv-text">RESTful API for project management (Event, Article, GPA Explanation)</div>
+                  <div class="cv-text--small">Technologies: Java, Thymeleaf, Spring Boot, MySQL</div>
+                  <div class="project-links">
+                    <div class="cv-text--small">
+                      <i data-lucide="github" class="icon icon--small"></i> Private respository
+                    </div>
+                  </div>
+                </div>
+                <div class="project-item">
+                  <div class="project-item__title">Polyshoes Desktop App</div>
+                  <div class="cv-text">Desktop application to manage sneaker products and store operations.</div>
+                  <div class="cv-text--small">Technologies: Java Swing, SQL Server</div>
+                  <div class="project-links">
+                    <div class="cv-text--small">
+                      <i data-lucide="github" class="icon icon--small"></i> github.com/caongocgiap/polyshoes.git
+                    </div>
+                  </div>
+                </div>
+                <div class="project-item">
+                  <div class="project-item__title">Landing Page Hackathon 2023</div>
+                  <div class="cv-text">Landing Page Hackathon 2023 Semi-Finals</div>
+                  <div class="cv-text--small">Technologies: HTML/CSS</div>
+                  <div class="project-links">
+                    <div class="cv-text--small">
+                      <i data-lucide="github" class="icon icon--small"></i> github.com/caongocgiap/LandingPageHackathon2023
+                    </div>
+                    <div class="cv-text--small">
+                      <i data-lucide="globe" class="icon icon--small"></i> caongocgiap.github.io/LandingPageHackathon2023
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education -->
+              <div class="cv-section">
+                <div class="section-header"><div class="section-header__title">Education</div></div>
+                <div class="experience-item">
+                  <div class="education-layout">
+                    <div class="education-item__title">
+                      FPT Polytechnic College
+                      <div class="cv-text--small">GPA: 3.8/4.0</div>
+                    </div>
+                    <div class="education-details--flex">
+                      <div class="cv-text--small">Bachelor of Practice in Information Technology</div>
+                      <p class="cv-text--small">01/2025</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Certifications -->
+              <div class="cv-section">
+                <div class="section-header"><div class="section-header__title">Certifications</div></div>
+                <div class="experience-item">
+                  <div class="education-layout">
+                    <div class="project-item__title">
+                      Java Web Project
+                      <div>
+                        <a target="_blank" href="https://xuongthuchanh.poly.edu.vn/certificate/PH38253/65d8bbed1885441d55e6b664">Link</a>
+                      </div>
+                    </div>
+                    <div class="education-details">
+                      <div class="cv-text--small">Certificate of Completion</div>
+                      <div class="cv-text--small">04/2024</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="experience-item">
+                  <div class="education-layout">
+                    <div class="project-item__title">
+                      Department Portal V2
+                      <div>
+                        <a target="_blank" href="https://xuongthuchanh.poly.edu.vn/certificate/PH38253/65b653d63fd900d7984ea7d7">Link</a>
+                      </div>
+                    </div>
+                    <div class="education-details">
+                      <div class="cv-text--small">Certificate of Completion</div>
+                      <div class="cv-text--small">04/2024</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="experience-item">
+                  <div class="education-layout">
+                    <div class="project-item__title">
+                      Events Management Project
+                      <div>
+                        <a target="_blank" href="https://xuongthuchanh.poly.edu.vn/certificate/PH38253/66222f26a6bff160e8249e62">Link</a>
+                      </div>
+                    </div>
+                    <div class="education-details">
+                      <div class="cv-text--small">Certificate of Completion</div>
+                      <div class="cv-text--small">04/2024</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="experience-item">
+                  <div class="education-layout">
+                    <div class="project-item__title">
+                      Counter Sales Website - Advanced
+                      <div>
+                        <a target="_blank" href="https://xuongthuchanh.poly.edu.vn/certificate/PH38253/6728bc848b061fcc21ccf229">Link</a>
+                      </div>
+                    </div>
+                    <div class="education-details">
+                      <div class="cv-text--small">Certificate of Completion</div>
+                      <div class="cv-text--small">11/2024</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cv-sidebar">
+              <!-- Skills -->
+              <div class="cv-section">
+                <div class="section-header"><div class="section-header__title">Skills</div></div>
+                <div class="cv-section">
+                  <p class="skills-category">
+                    <span class="skills-category__label">Programming Languages:</span><br />
+                    <span class="skills-category__items">Java, TypeScript, Node.js, SQL</span>
+                  </p>
+                  
+                  <p class="skills-category">
+                    <span class="skills-category__label">Frameworks:</span><br />
+                    <span class="skills-category__items">Spring Boot, React</span>
+                  </p>
+                  
+                  <p class="skills-category">
+                    <span class="skills-category__label">Databases:</span><br />
+                    <span class="skills-category__items">SQL Server, MySQL</span>
+                  </p>
+                  
+                  <p class="skills-category">
+                    <span class="skills-category__label">Cloud & DevOps:</span><br />
+                    <span class="skills-category__items">Docker</span>
+                  </p>
+                  
+                  <p class="skills-category">
+                    <span class="skills-category__label">Tools:</span><br />
+                    <span class="skills-category__items">Git, Postman, Trello</span>
+                  </p>
+                  
+                  <p class="skills-category">
+                    <span class="skills-category__label">Soft Skills:</span><br />
+                    <span class="skills-category__items">Teamwork, Self-study, Leadership</span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Portfolio -->
+              <div class="cv-section">
+                <div class="section-header"><div class="section-header__title">Portfolio</div></div>
+                <div class="contact-item">
+                  <div class="contact-item__text">
+                    <i data-lucide="linkedin" class="icon"></i> linkedin.com/in/ngcoogiapw
+                  </div>
+                </div>
+                
+                <div class="contact-item">
+                  <div class="contact-item__text">
+                    <i data-lucide="github" class="icon"></i> github.com/caongocgiap
+                  </div>
+                </div>
+                
+                <div class="portfolio-links">
+                  <div class="contact-item__text">
+                    <i data-lucide="globe" class="icon"></i> ngocgiap.vercel.app
+                  </div>
+                </div>
+              </div>
+
+              <!-- Languages -->
+              <div class="cv-section">
+                <div class="section-header"><div class="section-header__title">Languages</div></div>
+                <div class="cv-text--small">Vietnamese - Native</div>
+                <div class="cv-text--small">English - Intermediate</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      // Initialize Lucide icons
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    </script>
+  </body>
+</html> 

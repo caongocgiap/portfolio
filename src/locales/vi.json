@@ -1,0 +1,95 @@
+{
+    "header": {
+        "Home": "Trang chủ",
+        "Experience": "Kinh nghiệm",
+        "Projects": "Dự án",
+        "Connect": "Liên hệ",
+        "DownloadCV": "Tải CV"
+    },
+    "home": {
+        "Hi, I am": "Xin chào, em là ",
+        "I am always": "Em luôn tập trung vào việc trau dồi kiến thức và học hỏi kinh nghiệm từ các anh chị đi trước",
+        "hireMe": "Tuyển dụng"
+    },
+    "experience": {
+        "experience": "<Kinh nghiệm />",
+        "Date": "Thời gian",
+        "Present": "Hiện tại",
+        "Responsibility": "Trách nhiệm",
+        "Technical support": "Hỗ trợ kỹ thuật",
+        "experience1-detail1": "Hỗ trợ và sửa chữa các vấn đề liên quan đến phần cứng, phần mềm và hệ thống mạng cho người dùng",
+        "experience1-detail2": "Triển khai và cấu hình hệ điều hành (Windows/macOS)",
+        "experience1-detail3": "Cài đặt, cấu hình và bảo trì hệ thống giám sát (IP/Camera CCTV) và thiết bị mạng (Router, Switch, Wi-Fi AP)",
+        "experience2-detail1": "Xây dựng REST APIs và hệ thống cơ sở dữ liệu cho nền tảng quản lý",
+        "experience2-detail2": "Phát triển APIs sử dụng Spring Boot kết hợp với JPA/Hibernate để quản lý dữ liệu (sự kiện, bài viết, giải thích GPA)",
+        "experience2-detail3": "Sửa lỗi dựa trên báo cáo từ đội kiểm tra hoặc phản hồi từ người dùng",
+        "experience2-detail4": "Tham gia vào viết tài liệu và thiết kế giao diện",
+        "experience2-detail5": "Làm việc với các framework frontend như React để xây dựng các thành phần giao diện người dùng cơ bản"
+    },
+    "projects": {
+        "projects": "<Dự án />",
+        "project1": {
+            "name": "Quản lý sự kiện",
+            "description": "Một ứng dụng web được thiết kế để giúp giáo viên quản lý sự kiện trường học một cách hiệu quả hơn. Tất cả các hoạt động liên quan đến sự kiện được quản lý bên trong nền tảng. Dự án được phát triển dựa trên thực tế yêu cầu và phản hồi từ giáo viên trong phòng.",
+            "responsible": [
+                "Xây dựng các tính năng mới theo yêu cầu của trưởng nhóm",
+                "Sửa lỗi và cải thiện các tính năng hiện có",
+                "Hỗ trợ với các hoạt động về cơ sở dữ liệu và điều chỉnh giao diện người dùng",
+                "Hỗ trợ nhóm với các tác vụ phát triển liên quan"
+            ]
+        },
+        "project2": {
+            "name": "Quản lý bài viết",
+            "description": "Một ứng dụng web được thiết kế để giúp giáo viên quản lý bài viết trường học một cách hiệu quả hơn. Tất cả các hoạt động liên quan đến bài viết được quản lý bên trong nền tảng. Dự án được phát triển dựa trên thực tế yêu cầu và phản hồi từ giáo viên trong phòng.",
+            "responsible": [
+                "Xây dựng các tính năng mới theo yêu cầu của trưởng nhóm",
+                "Sửa lỗi và cải thiện các tính năng hiện có",
+                "Hỗ trợ với các hoạt động về cơ sở dữ liệu và điều chỉnh giao diện người dùng",
+                "Hỗ trợ nhóm với các tác vụ phát triển liên quan"
+            ]
+        },
+        "project3": {
+            "name": "Quản lý giải trình chỉ số GPA",
+            "description": "Một ứng dụng web được thiết kế để giúp giáo viên quản lý đánh giá chỉ số GPA của sinh viên dành cho giảng viên một cách hiệu quả hơn. Tất cả các hoạt động liên quan đến giải thích GPA được quản lý bên trong nền tảng. Dự án được phát triển dựa trên thực tế yêu cầu và phản hồi từ giáo viên trong phòng.",
+            "responsible": [
+                "Xây dựng các tính năng mới theo yêu cầu của trưởng nhóm",
+                "Sửa lỗi và cải thiện các tính năng hiện có",
+                "Hỗ trợ với các hoạt động về cơ sở dữ liệu và điều chỉnh giao diện người dùng",
+                "Hỗ trợ nhóm với các tác vụ phát triển liên quan"
+            ]
+        },
+        "project4": {
+            "name": "Phần mềm bán giày sneaker",
+            "description": "Đây là sản phẩm hoàn thiện sau khi em học xong môn dự án 1 tại trường. Sản phẩm này chứa đầy đủ các chức năng cơ bản của một phần mềm bán giày tại quầy bán giày.",
+            "responsible": [
+                "Quản lý dự án nhóm",
+                "Tham gia thiết kế đặc tả phần mềm SRS",
+                "Thiết kế database",
+                "Coding and Testing"
+            ]
+        },
+        "project5": {
+            "name": "Landing Page Hackathon 2023",
+            "description": "Một trang landing page cho Vinfast Car, sản phẩm dự thi trong cuộc thi Landing Page Hackathon 2023.",
+            "responsible": [
+                "Phác thảo giao diện bằng Photoshop",
+                "Tham gia thiết kế frontend bằng 100% HTML/CSS",
+                "Tham gia cuộc thi"
+            ]
+        },
+        "project6": {
+            "name": "Quản lý cửa hàng công nghệ",
+            "description": "Một ứng dụng quản lý cửa hàng công nghệ, đây là dự án cá nhân em tự làm. Dự án là một bản sao của hệ thống quản lý cửa hàng công nghệ.",
+            "responsible": [
+                "Thiết kế giao diện bằng React và TypeScript cho giao diện sạch và dễ sử dụng",
+                "Coding các chức năng authentication và authorization cho 3 role: admin, staff, customer",
+                "Thiết kế database dùng MySQL",
+                "Coding các chức năng CRUD khác"
+            ]
+        }
+    },
+    "connect": {
+        "connect": "<Liên hệ />",
+        "social-network": "Mạng xã hội"
+    }
+}

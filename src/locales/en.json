@@ -1,0 +1,95 @@
+{
+    "header": {
+        "Home": "Home",
+        "Experience": "Experience",
+        "Projects": "Projects",
+        "Connect": "Connect",
+        "DownloadCV": "Download CV"
+    },
+    "home": {
+        "Hi, I am": "Hi, I am",
+        "I am always": "I am always focused on growing my knowledge and learning experience from those who have gone before",
+        "hireMe": "Hire me"
+    },
+    "experience": {
+        "experience": "<Experience />",
+        "Date": "Date",
+        "Present": "Present",
+        "Responsibility": "Responsibility",
+        "Technical support": "Technical support",
+        "experience1-detail1": "Technical support and troubleshooting related to hardware, software, and network systems for users",
+        "experience1-detail2": "Deploying and configuring operating systems (Windows/macOS)",
+        "experience1-detail3": "Installing, configuring, and maintaining surveillance systems (IP/CCTV Cameras) and network devices (Routers, Switches, Wi-Fi APs)",
+        "experience2-detail1": "Built REST APIs and database systems for management platform",
+        "experience2-detail2": "Developed APIs using Spring Boot combined with JPA/Hibernate for managing data (events, articles, GPA explanation)",
+        "experience2-detail3": "Fixed bugs based on reports from the testing team or user feedback",
+        "experience2-detail4": "Participated in team documentation and interface design",
+        "experience2-detail5": "Worked with frontend frameworks like React to build basic user interface components"
+    },
+    "projects": {
+        "projects": "<Projects />",
+        "project1": {
+            "name": "Portal Events",
+            "description": "A web application designed to help teachers manage school events more efficiently. All event-related activities are managed within the platform. The project was developed based on real requests and feedback from teachers in the department.",
+            "responsible": [
+                "Implemented new features according to team lead's requirements",
+                "Fixed bugs and improved existing functionalities",
+                "Assisted with database operations and UI adjustments",
+                "Supported the team with various development-related tasks when needed"
+            ]
+        },
+        "project2": {
+            "name": "Portal Articles",
+            "description": "A web application designed to help teachers manage school articles more efficiently. All articles-related activities are managed within the platform. The project was developed based on real requests and feedback from teachers in the department.",
+            "responsible": [
+                "Implemented new features according to team lead's requirements",
+                "Fixed bugs and improved existing functionalities",
+                "Assisted with database operations and UI adjustments",
+                "Supported the team with various development-related tasks when needed"
+            ]
+        },
+        "project3": {
+            "name": "GPA Explanation",
+            "description": "A web application designed to help teachers manage school GPA Explanation more efficiently. All GPA Explanation-related activities are managed within the platform. The project was developed based on real requests and feedback from teachers in the department.",
+            "responsible": [
+                "Implemented new features according to team lead's requirements",
+                "Fixed bugs and improved existing functionalities",
+                "Assisted with database operations and UI adjustments",
+                "Supported the team with various development-related tasks when needed"
+            ]
+        },
+        "project4": {
+            "name": "Polyshoes Desktop App",
+            "description": "This is the final product after I finished the project 1 course at school. This product contains all the basic features of a sneaker store software.",
+            "responsible": [
+                "Project management",
+                "Software requirement specification",
+                "Software architecture design",
+                "Coding & Testing"
+            ]
+        },
+        "project5": {
+            "name": "Landing Page Hackathon 2023",
+            "description": "A landing page for Vinfast Car, this project was developed for a hackathon competition.",
+            "responsible": [
+                "Developed UI design in Photoshop",
+                "Developed the frontend using 100% HTML/CSS",
+                "Participated in the hackathon competition"
+            ]
+        },
+        "project6": {
+            "name": "Techshop Management System",
+            "description": "A management system for a tech shop, this project was developed for a self-study. This project is a clone of the management system of a tech shop.",
+            "responsible": [
+                "Developed the frontend using React and TypeScript for a clean and user-friendly interface",
+                "Implemented the authentication and authorization features",
+                "Developed the database using MySQL",
+                "Implemented the CRUD operations"
+            ]
+        }
+    },
+    "connect": {
+        "connect": "<Connect />",
+        "social-network": "Social Network"
+    }
+}
