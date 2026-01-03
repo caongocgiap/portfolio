@@ -79,31 +79,6 @@ export default function Home() {
               className="transition-all duration-300 ease-in-out group-hover:stroke-blue-400"
             />
           </svg>
-          {/* <svg
-            width="30"
-            height="30"
-            viewBox="0 0 30 30"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-12"
-          >
-            <path
-              d="M8.75668 10.6223L12.4342 12.7973C14.5779 14.0648 15.4342 14.0648 17.5792 12.7973L21.2567 10.6223"
-              stroke="white"
-              stroke-width="1.60714"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              className="transition-all duration-300 ease-in-out group-hover:stroke-blue-400"
-            />
-            <path
-              d="M2.52233 16.844C2.60358 20.6753 2.64483 22.5915 4.05858 24.0103C5.47233 25.4303 7.43983 25.479 11.3761 25.5778C13.8011 25.6403 16.2036 25.6403 18.6286 25.5778C22.5648 25.479 24.5323 25.4303 25.9461 24.0103C27.3598 22.5915 27.4011 20.6753 27.4836 16.844C27.5086 15.6115 27.5086 14.3865 27.4836 13.154C27.4011 9.32276 27.3598 7.40651 25.9461 5.98776C24.5323 4.56776 22.5648 4.51901 18.6286 4.42026C16.2115 4.35926 13.7932 4.35926 11.3761 4.42026C7.43983 4.51901 5.47233 4.56776 4.05858 5.98776C2.64483 7.40651 2.60358 9.32276 2.52108 13.154C2.49476 14.3839 2.49601 15.6141 2.52233 16.844Z"
-              stroke="white"
-              stroke-width="1.60714"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              className="transition-all duration-300 ease-in-out group-hover:stroke-blue-400"
-            />
-          </svg> */}
         </button>
       </div>
       <hr className="color-white opacity-30 w-3/4 lg:w-2/5" />

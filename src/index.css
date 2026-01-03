@@ -12,8 +12,7 @@
     }
     
     body {
-      background: black url("/assets/images/bg-background.svg") no-repeat center center;
-      background-size: cover;
+      background: black;
       color: var(--primary);
     }
 
