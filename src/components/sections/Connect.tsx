@@ -2,6 +2,10 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import ConnectForm from "../ui/ConnectForm";
 import { useTranslation } from "react-i18next";
+import avatar from "@/assets/images/avatar-connect.webp";
+import facebook from "@/assets/images/facebook.webp";
+import github from "@/assets/images/github.webp";
+import linkedin from "@/assets/images/linkedin.png";
 
 export default function Connect() {
   const { t } = useTranslation();
@@ -52,7 +56,9 @@ export default function Connect() {
           <div className="flex items-center gap-3 lg:gap-8">
             <div>
               <img
-                src="/assets/images/avatar-connect.jpg"
+                src={avatar} 
+                loading="lazy" 
+                decoding="async"
                 alt="Avatar - Cao Ngoc Giap"
                 className="inline-block size-16 lg:size-25 rounded-full ring-2 ring-foreground outline -outline-offset-1 outline-white/10 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:ring-green-400 group-hover:outline-green-400/30"
               />
@@ -152,7 +158,9 @@ export default function Connect() {
             className="p-2 lg:p-3 rounded-2xl bg-gray-400/40 border-2 border-gray-400 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-black/30"
           >
             <img
-              src="/assets/images/github.png"
+              src={github}
+              loading="lazy"
+              decoding="async"
               alt="Github"
               className="w-6 lg:w-8 h-6 lg:h-8"
             />
@@ -164,7 +172,9 @@ export default function Connect() {
             className="p-2 lg:p-3 rounded-2xl bg-blue-400/40 border-2 border-blue-400 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-blue-400/40"
           >
             <img
-              src="/assets/images/linkedin.png"
+              src={linkedin}
+              loading="lazy"
+              decoding="async"
               alt="LinkedIn"
               className="w-6 lg:w-8 h-6 lg:h-8"
             />
@@ -176,7 +186,9 @@ export default function Connect() {
             className="p-2 lg:p-3 rounded-2xl bg-blue-400/40 border-2 border-blue-400 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:shadow-blue-400/40"
           >
             <img
-              src="/assets/images/facebook.svg"
+              src={facebook}
+              loading="lazy"
+              decoding="async"
               alt="Facebook"
               className="w-6 lg:w-8 h-6 lg:h-8"
             />

@@ -1,7 +1,8 @@
 import TechStack from "../ui/TechStack";
-import avatar from "/assets/images/avatar-2.svg";
+import avatar from "@/assets/images/avatar-2.webp";
 import Typewriter from "typewriter-effect";
 import { useTranslation } from "react-i18next";
+import cvUrl from "@/assets/cv/intern-backend_caongocgiap.html?url";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -23,7 +24,6 @@ export default function Home() {
   };
 
   const handleViewCVClick = () => {
-    const cvUrl = "/assets/cv/intern-backend_caongocgiap.html";
     window.open(cvUrl, "_blank");
   };
 
@@ -111,7 +111,7 @@ export default function Home() {
         <TechStack />
       </div>
       <div className="hidden lg:block lg:absolute bottom-0 right-0">
-        <img src={avatar} alt="image-home" />
+        <img src={avatar} alt="image-home" loading="lazy" decoding="async" />
       </div>
     </section>
   );

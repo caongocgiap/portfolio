@@ -1,12 +1,12 @@
 import { useTranslation } from "react-i18next";
+import cv from "@/assets/cv/intern-backend_caongocgiap.pdf?url";
 
 export default function ButtonDownloadCV() {
   const {t} = useTranslation();
 
   const handleDownloadCV = () => {
-    const cvUrl = "/assets/cv/intern-backend_caongocgiap.pdf";
     const link = document.createElement('a');
-    link.href = cvUrl;
+    link.href = cv;
     link.download = "intern-backend_caongocgiap.pdf";
     link.target = "_blank";
     document.body.appendChild(link);

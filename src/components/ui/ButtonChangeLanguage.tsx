@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import i18n from "../../config/i18n";
-import vi from "/assets/images/vi.png";
-import en from "/assets/images/en.png";
+import vi from "@/assets/images/vi.webp";
+import en from "@/assets/images/en.webp";
 
 export default function ButtonChangeLanguage() {
   const [language, setLanguage] = useState(i18n.language || "en");
@@ -29,7 +29,7 @@ export default function ButtonChangeLanguage() {
         isEnglish ? "rotate-360" : "rotate-0"
       }`}
     >
-      <img src={isEnglish ? en : vi} alt="Language" className="h-8 w-8 lg:h-12 lg:w-12 rotate-0 transition-all hover:scale-105" />
+      <img src={isEnglish ? en : vi} alt="Language" loading="lazy" decoding="async" className="h-8 w-8 lg:h-12 lg:w-12 rotate-0 transition-all hover:scale-105" />
     </button>
     </>
   );

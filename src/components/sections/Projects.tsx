@@ -1,5 +1,9 @@
 import projects from "../../data/projects.json";
 import { useTranslation } from "react-i18next";
+import collaborator from "@/assets/images/icons8-collaborator-male-32.webp";
+import company from "@/assets/images/icons8-company-32.png";
+import handWithPen from "@/assets/images/icons8-hand-with-pen-32.png";
+import setting from "@/assets/images/icons8-setting.svg";
 
 export default function Projects() {
   const { t } = useTranslation();
@@ -52,7 +56,9 @@ export default function Projects() {
                   <div className="mt-2 flex space-x-1 lg:space-x-3">
                     <span className="inline-flex items-center px-2 lg:px-3 py-1 rounded-lg bg-purple-900/80 text-purple-300 font-mono text-xs hover:scale-105 hover:bg-purple-800/90 group-hover:bg-purple-700/90 transition-all duration-300">
                       <img
-                        src="/assets/images/icons8-company-32.png"
+                        src={company}
+                        loading="lazy"
+                        decoding="async"
                         className="w-4 h-4 mr-1 lg:mr-2 group-hover:rotate-12 transition-transform duration-300"
                         alt="Company"
                       />
@@ -60,7 +66,9 @@ export default function Projects() {
                     </span>
                     <span className="inline-flex items-center px-3 py-1 rounded-lg bg-green-700/80 text-green-300 font-mono text-xs hover:scale-105 hover:bg-green-600/90 group-hover:bg-green-500/90 transition-all duration-300">
                       <img
-                        src="/assets/images/icons8-collaborator-male-32.png"
+                        src={collaborator}
+                        loading="lazy"
+                        decoding="async"
                         className="w-4 h-4 mr-1 lg:mr-2 group-hover:rotate-12 transition-transform duration-300"
                         alt="Role"
                       />
@@ -90,7 +98,9 @@ export default function Projects() {
                 <div>
                   <div className="flex items-center mb-2">
                     <img
-                      src="/assets/images/icons8-hand-with-pen-32.png"
+                      src={handWithPen}
+                      loading="lazy"
+                      decoding="async"
                       className="inline w-5 h-5 lg:w-7 lg:h-7 mr-2 drop-shadow group-hover:scale-110 group-hover:rotate-12 transition-all duration-300"
                       alt="Responsible"
                     />
@@ -126,7 +136,9 @@ export default function Projects() {
                 <div>
                   <div className="flex items-center">
                     <img
-                      src="/assets/images/icons8-setting.svg"
+                      src={setting}
+                      loading="lazy"
+                      decoding="async"
                       className="inline w-5 h-5 lg:w-7 lg:h-7 mr-1 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300"
                       alt="Tech Stack"
                     />

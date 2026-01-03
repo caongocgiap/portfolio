@@ -1,6 +1,7 @@
 import experiences from "../../data/experiences.json";
 import Typewriter from "typewriter-effect";
 import { useTranslation } from "react-i18next";
+import terminal from "@/assets/images/icons8-terminal-32.png";
 
 export default function Experience() {
   const { t } = useTranslation();
@@ -19,7 +20,9 @@ export default function Experience() {
               <span className="w-2 h-2 lg:w-3 lg:h-3 rounded-full bg-green-500 animate-pulse [animation-delay:0.3s]"></span>
             </div>
             <img
-              src="/assets/images/icons8-terminal-32.png"
+              src={terminal}
+              loading="lazy"
+              decoding="async"
               alt="Terminal"
               className="w-5 h-5 lg:w-6 lg:h-6 mr-1 lg:mr-3 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-12"
             />
