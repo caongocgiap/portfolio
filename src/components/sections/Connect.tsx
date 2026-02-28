@@ -49,15 +49,15 @@ export default function Connect() {
   return (
     <section id="connect" className="min-h-screen mt-10 md:pt-30 px-2 md:mx-5">
       <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-center hover:scale-110 hover:text-blue-400 hover:drop-shadow-2xl hover:drop-shadow-blue-500/50 animate-pulse hover:animate-none transform transition-all duration-1000 ease-out">
-        {t(`connect.connect`)}
+        {t(`connect.title`)}
       </h1>
       <div className="grid grid-cols-full lg:grid-cols-7 gap-2 lg:gap-6 mt-5 lg:mt-10">
         <div className="grid-cols-full lg:col-span-3 rounded-2xl lg:rounded-4xl bg-white/16 backdrop-blur-lg shadow-lg text-white border border-white/50 mb-6 lg:mb-10 p-3 lg:p-6 hover:bg-white/20 hover:shadow-2xl hover:shadow-green-500/20 hover:scale-[1.02] hover:border-green-400/50 hover:-translate-y-2 group transition-all duration-300 ease-out">
           <div className="flex items-center gap-3 lg:gap-8">
             <div>
               <img
-                src={avatar} 
-                loading="lazy" 
+                src={avatar}
+                loading="lazy"
                 decoding="async"
                 alt="Avatar - Cao Ngoc Giap"
                 className="inline-block size-16 lg:size-25 rounded-full ring-2 ring-foreground outline -outline-offset-1 outline-white/10 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:ring-green-400 group-hover:outline-green-400/30"

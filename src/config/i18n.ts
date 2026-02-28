@@ -14,6 +14,10 @@ i18n.use(initReactI18next).init({
     },
     lng: "en", // default language
     fallbackLng: "en",
+    detection: {
+        order: ['querystring', 'navigator'],
+        caches: [], // Don't use localStorage
+    },
 });
 
 export default i18n;

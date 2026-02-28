@@ -1,7 +1,26 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { emailjsConfig, type EmailTemplateParams } from "../../config/emailjs";
-import emailjs from "@emailjs/browser";
 import { toast } from 'react-toastify';
+
+async function sendEmailDirectly(params: EmailTemplateParams): Promise<void> {
+  const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      service_id: emailjsConfig.serviceId,
+      template_id: emailjsConfig.templateId,
+      user_id: emailjsConfig.publicKey,
+      template_params: params,
+    }),
+  });
+
+  if (!response.ok) {
+    const errorText = await response.text();
+    throw new Error(`EmailJS API error: ${response.status} - ${errorText}`);
+  }
+}
 
 export default function ConnectForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -10,10 +29,6 @@ export default function ConnectForm() {
     email: "",
     message: "",
   });
-
-  useEffect(() => {
-    emailjs.init(emailjsConfig.publicKey);
-  }, []);
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -27,7 +42,7 @@ export default function ConnectForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formData.name.trim()) {
       toast.error("Please enter your name");
       return;
@@ -51,12 +66,8 @@ export default function ConnectForm() {
         to_email: emailjsConfig.toEmail,
         subject: emailjsConfig.defaultSubject,
       };
-      await emailjs.send(
-        emailjsConfig.serviceId,
-        emailjsConfig.templateId,
-        templateParams,
-        emailjsConfig.publicKey
-      );
+
+      await sendEmailDirectly(templateParams);
 
       setFormData({ name: "", email: "", message: "" });
       toast.success("Message sent successfully! I'll get back to you soon.");
@@ -138,11 +149,10 @@ export default function ConnectForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w-full mt-4 lg:mt-8 px-3 lg:px-6 py-2 lg:py-3 font-semibold rounded-md transition-all duration-300 ease-in-out flex items-center justify-center space-x-2 hover:scale-105 hover:shadow-xl hover:-translate-y-1 group-hover/form:shadow-blue-500/50 ${
-            isSubmitting
-              ? "bg-gray-500 cursor-not-allowed"
-              : "bg-foreground hover:bg-orange-500 hover:shadow-orange-500/50 group-hover/form:bg-orange-500"
-          }`}
+          className={`w-full mt-4 lg:mt-8 px-3 lg:px-6 py-2 lg:py-3 font-semibold rounded-md transition-all duration-300 ease-in-out flex items-center justify-center space-x-2 hover:scale-105 hover:shadow-xl hover:-translate-y-1 group-hover/form:shadow-blue-500/50 ${isSubmitting
+            ? "bg-gray-500 cursor-not-allowed"
+            : "bg-foreground hover:bg-orange-500 hover:shadow-orange-500/50 group-hover/form:bg-orange-500"
+            }`}
         >
           {isSubmitting ? (
             <>
