@@ -1,141 +1,135 @@
 {
-    "header": {
-        "home": "Home",
-        "experience": "Experience",
-        "projects": "Projects",
-        "connect": "Connect",
-        "downloadCV": "Download CV"
-    },
-    "home": {
-        "Hi, I am": "Hi, I am",
-        "I am always": "I am always focused on growing my knowledge and learning experience from those who have gone before",
-        "hireMe": "Hire me"
-    },
-    "experiences": {
-        "title": "<Experience />",
-        "date": "Date",
-        "present": "Present",
-        "responsibility": "Responsibility",
-        "technical support": "Technical support",
-        "experience": [
-            {
-                "role": "IT Support Consultant",
-                "company": "Hiep Thanh Computer",
-                "period": "05/2025 - 02/2026",
-                "details": [
-                    "Technical support and troubleshooting related to hardware, software, and network systems for users",
-                    "Deploying and configuring operating systems (Windows/macOS)",
-                    "Installing, configuring, and maintaining surveillance systems (IP/CCTV Cameras) and network devices (Routers, Switches, Wi-Fi APs)"
-                ]
-            },
-            {
-                "role": "Intern Backend Developer (Java/Spring Boot)",
-                "company": "FPL Factory HN",
-                "period": "04/2024 - 01/2025",
-                "details": [
-                    "Built REST APIs and database systems for management platform",
-                    "Developed APIs using Spring Boot combined with JPA/Hibernate for managing data (events, articles, GPA explanation)",
-                    "Fixed bugs based on reports from the testing team or user feedback",
-                    "Participated in team documentation and interface design",
-                    "Worked with frontend frameworks like React to build basic user interface components"
-                ]
-            }
+  "header": {
+    "home": "Home",
+    "experience": "Experience",
+    "projects": "Projects",
+    "connect": "Connect",
+    "downloadCV": "Download CV"
+  },
+  "home": {
+    "Hi, I am": "Hi, I am",
+    "I am always": "I am always focused on growing my knowledge and learning experience from those who have gone before",
+    "hireMe": "Hire me"
+  },
+  "experiences": {
+    "title": "<Experience />",
+    "date": "Date",
+    "present": "Present",
+    "responsibility": "Responsibility",
+    "technical support": "Technical support",
+    "experience": [
+      {
+        "role": "IT Support Consultant",
+        "company": "Hiep Thanh Computer",
+        "period": "05/2025 - 02/2026",
+        "details": [
+          "Technical support and troubleshooting related to hardware, software, and network systems for users",
+          "Deploying and configuring operating systems (Windows/macOS)",
+          "Installing, configuring, and maintaining surveillance systems (IP/CCTV Cameras) and network devices (Routers, Switches, Wi-Fi APs)"
         ]
-    },
-    "projects": {
-        "title": "<Projects />",
-        "project": [
-            {
-                "name": "Tripdi",
-                "company": "Personal Project",
-                "timeframe": "01/2026 - Present",
-                "technologies": [
-                    "React",
-                    "TypeScript",
-                    "Tailwind CSS",
-                    "Cloudinary",
-                    "Firebase"
-                ],
-                "role": "Full Stack Developer",
-                "progress": 90,
-                "description": "The website displays personal preferences, stores photos on CloudInary and data on Firebase.",
-                "responsible": [
-                    "Coding and Testing",
-                    "Fix bug and maintain project",
-                    "Deploy project by Vercel"
-                ],
-                "linkGithub": "https://github.com/caongocgiap/tripdi.git",
-                "linkDemo": "https://tripdi.vercel.app"
-            },
-            {
-                "name": "Management System",
-                "company": "FPL Factory HN",
-                "teamSize": 5,
-                "timeframe": "04/2024 - 01/2025",
-                "technologies": [
-                    "Java",
-                    "Spring Boot",
-                    "MySQL",
-                    "Thymeleaf",
-                    "Tailwind CSS",
-                    "JavaScript",
-                    "Ajax"
-                ],
-                "role": "Backend Developer",
-                "progress": 100,
-                "description": "The system consists of 3 modules: event management, article management, and GPA explanation management, which automates the approval process of department activities.",
-                "responsible": [
-                    "Build new features according to the requirements of the team lead",
-                    "Fix bugs and improve existing features",
-                    "Build user interface and create SRS documentation"
-                ],
-                "linkYoutube": "https://youtu.be/PuEDRAn45kM?si=vcUZEy2phWEKyn4z"
-            },
-            {
-                "name": "Sneaker Polyshoes Software",
-                "company": "Project 1 - School Assignment",
-                "teamSize": 5,
-                "timeframe": "10/2023 - 12/2023",
-                "technologies": [
-                    "Java",
-                    "Swing",
-                    "SQL Server"
-                ],
-                "role": "Team Lead & Developer",
-                "progress": 100,
-                "description": "This is the final product after I finished the project 1 course at school. This product contains all the basic features of a sneaker store software.",
-                "responsible": [
-                    "Project management",
-                    "Participate in designing software SRS",
-                    "Design database",
-                    "Coding and Testing"
-                ],
-                "linkGithub": "https://github.com/caongocgiap/polyshoes.git",
-                "linkYoutube": "https://youtu.be/PuEDRAn45kM?si=vcUZEy2phWEKyn4z"
-            },
-            {
-                "name": "Landing Page Hackathon 2023",
-                "company": "FPT Polytechnic",
-                "teamSize": 2,
-                "timeframe": "03/2023 - 04/2023",
-                "technologies": [
-                    "HTML/CSS"
-                ],
-                "role": "Frontend Developer & Designer",
-                "progress": 100,
-                "description": "Landing page for Vinfast Car, this project was developed for a hackathon competition.",
-                "responsible": [
-                    "Designing the user interface using Photoshop",
-                    "Participate in designing frontend using 100% HTML/CSS",
-                    "Participate in the hackathon competition"
-                ],
-                "linkGithub": "https://github.com/caongocgiap/LandingPageHackathon2023.git",
-                "linkDemo": "https://caongocgiap.github.io/LandingPageHackathon2023"
-            }
+      },
+      {
+        "role": "Intern Backend Developer (Java/Spring Boot)",
+        "company": "FPL Factory HN",
+        "period": "04/2024 - 01/2025",
+        "details": [
+          "Built REST APIs and database systems for management platform",
+          "Developed APIs using Spring Boot combined with JPA/Hibernate for managing data (events, articles, GPA explanation)",
+          "Fixed bugs based on reports from the testing team or user feedback",
+          "Participated in team documentation and interface design",
+          "Worked with frontend frameworks like React to build basic user interface components"
         ]
-    },
-    "connect": {
-        "title": "<Connect />",
-        "social-network": "Social Networks"
-    }
+      }
+    ]
+  },
+  "projects": {
+    "title": "<Projects />",
+    "project": [
+      {
+        "name": "Tripdi",
+        "company": "Personal Project",
+        "timeframe": "01/2026 - Present",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Cloudinary",
+          "Firebase"
+        ],
+        "role": "Full Stack Developer",
+        "progress": 100,
+        "description": "The website displays personal preferences, stores photos on CloudInary and data on Firebase.",
+        "responsible": [
+          "Coding and Testing",
+          "Fix bug and maintain project",
+          "Deploy project by Vercel"
+        ],
+        "linkGithub": "https://github.com/caongocgiap/tripdi.git",
+        "linkDemo": "https://tripdi.vercel.app"
+      },
+      {
+        "name": "Management System",
+        "company": "FPL Factory HN",
+        "teamSize": 5,
+        "timeframe": "04/2024 - 01/2025",
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "MySQL",
+          "Thymeleaf",
+          "Tailwind CSS",
+          "JavaScript",
+          "Ajax"
+        ],
+        "role": "Backend Developer",
+        "progress": 100,
+        "description": "The system consists of 3 modules: event management, article management, and GPA explanation management, which automates the approval process of department activities.",
+        "responsible": [
+          "Build new features according to the requirements of the team lead",
+          "Fix bugs and improve existing features",
+          "Build user interface and create SRS documentation"
+        ],
+        "linkYoutube": "https://youtu.be/PuEDRAn45kM?si=vcUZEy2phWEKyn4z"
+      },
+      {
+        "name": "Sneaker Polyshoes Software",
+        "company": "Project 1 - School Assignment",
+        "teamSize": 5,
+        "timeframe": "10/2023 - 12/2023",
+        "technologies": ["Java", "Swing", "SQL Server"],
+        "role": "Team Lead & Developer",
+        "progress": 100,
+        "description": "This is the final product after I finished the project 1 course at school. This product contains all the basic features of a sneaker store software.",
+        "responsible": [
+          "Project management",
+          "Participate in designing software SRS",
+          "Design database",
+          "Coding and Testing"
+        ],
+        "linkGithub": "https://github.com/caongocgiap/polyshoes.git",
+        "linkYoutube": "https://youtu.be/PuEDRAn45kM?si=vcUZEy2phWEKyn4z"
+      },
+      {
+        "name": "Landing Page Hackathon 2023",
+        "company": "FPT Polytechnic",
+        "teamSize": 2,
+        "timeframe": "03/2023 - 04/2023",
+        "technologies": ["HTML/CSS"],
+        "role": "Frontend Developer & Designer",
+        "progress": 100,
+        "description": "Landing page for Vinfast Car, this project was developed for a hackathon competition.",
+        "responsible": [
+          "Designing the user interface using Photoshop",
+          "Participate in designing frontend using 100% HTML/CSS",
+          "Participate in the hackathon competition"
+        ],
+        "linkGithub": "https://github.com/caongocgiap/LandingPageHackathon2023.git",
+        "linkDemo": "https://caongocgiap.github.io/LandingPageHackathon2023"
+      }
+    ]
+  },
+  "connect": {
+    "title": "<Connect />",
+    "social-network": "Social Networks"
+  }
 }
